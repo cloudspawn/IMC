@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>IMC</title>
+</head>
+
+<body>
+    <header>
+        <h1>IMC</h1>
+    </header>
+    <div class="container-app">
+        <main>
+            <div class="definition">
+                <h2>Definition de l'IMC</h2>
+                <p>L’indice de masse corporelle ou IMC (en anglais, body mass index ou BMI) est une grandeur qui permet
+                    d'estimer la corpulence d’une personne.<br>
+                    Il se calcule en fonction de la taille et de la masse corporelle. Il a été conçu, au départ, pour
+                    les adultes de 18 à 65 ans. <a href="https://fr.wikipedia.org/wiki/Indice_de_masse_corporelle"
+                        target="_blank">Lien wikipedia</a>
+                </p>
+            </div>
+            <div class="content2">
+                <div class="form">
+                    <h2>Calcul de votre IMC</h2>
+                    <div class="poids1">
+                        <label id="lbl-poids" for="poids">Poids</label>
+                        <div class="errorP">Veuillez entrer un nombre</div><br>
+                        <span id="unite-kg"><input id="poids" type="text" aria-label="Votre poids"
+                                placeholder="Votre Poids" value=0></span>
+                    </div>
+                    <div class="taille1">
+                        <label id="lbl-taille" for="taille">Taille</label>
+                        <div class="errorT">Veuillez entrer un nombre</div><br>
+                        <span id="unite-cm"><input id="taille" type="text" aria-label="Votre taille "
+                                placeholder="Votre Taille" value=0></span>
+                    </div>
+                    <div id="resultat">Résultats</div>
+                    <div id="info"></div>
+                </div>
+                <div class="info">
+                    <table class="interpretation-imc" cellspacing="0" cellpading="0">
+                        <caption>Classification de l'<a
+                                href="https://www.who.int/fr/news-room/fact-sheets/detail/obesity-and-overweight"
+                                target="_blank">OMS</a>
+                        </caption>
+                        <tr>
+                            <td class="td1">IMC (kg/m²)</td>
+                            <td class="td2">Interpretation
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>moins de 16,5</td>
+                            <td>dénutrition ou anorexie</td>
+                        </tr>
+                        <tr>
+                            <td>16,5 à 18,5</td>
+                            <td>maigreur</td>
+                        </tr>
+                        <tr>
+                            <td>18,5 à 25</td>
+                            <td>poids normal</td>
+                        </tr>
+                        <tr>
+                            <td>25 à 30</td>
+                            <td>surpoids</td>
+                        </tr>
+                        <tr>
+                            <td>30 à 35</td>
+                            <td>obésité modèrée</td>
+                        </tr>
+                        <tr>
+                            <td>35 à 40</td>
+                            <td>obésité sévère</td>
+                        </tr>
+                        <tr>
+                            <td>plus de 40</td>
+                            <td>obésité morbide ou massive</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer><a href="mailto:">
+            <h2>Contact Us</h2>
+        </a></footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
